@@ -1,0 +1,105 @@
+{
+  "_from": "github:adiwajshing/baileys#multi-device",
+  "_id": "@adiwajshing/baileys-md@4.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@adiwajshing/baileys-md",
+  "_phantomChildren": {
+    "atomic-sleep": "1.0.0",
+    "fast-redact": "3.0.2",
+    "fast-safe-stringify": "2.1.1",
+    "fastify-warning": "0.2.0",
+    "flatstr": "1.0.12",
+    "quick-format-unescaped": "4.0.4"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "github:adiwajshing/baileys#multi-device",
+    "rawSpec": "github:adiwajshing/baileys#multi-device",
+    "saveSpec": "github:adiwajshing/baileys#multi-device",
+    "fetchSpec": null,
+    "gitCommittish": "multi-device"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:adiwajshing/baileys#5e94a2b6e3a6011a437b455e1a5a416eb13c0363",
+  "_spec": "github:adiwajshing/baileys#multi-device",
+  "_where": "C:\\test-bail-md",
+  "author": {
+    "name": "Adhiraj Singh"
+  },
+  "bugs": {
+    "url": "https://github.com/adiwajshing/baileys/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@hapi/boom": "^9.1.3",
+    "curve25519-js": "^0.0.4",
+    "got": "^11.8.1",
+    "jimp": "^0.16.1",
+    "libsignal": "git+https://github.com/adiwajshing/libsignal-node.git",
+    "music-metadata": "^7.4.1",
+    "node-cache": "^5.1.2",
+    "pino": "^6.7.0",
+    "protobufjs": "^6.10.1",
+    "qrcode-terminal": "^0.12.0",
+    "ws": "^7.3.1"
+  },
+  "deprecated": false,
+  "description": "WhatsApp Multi-Device API",
+  "devDependencies": {
+    "@types/got": "^9.6.11",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.6.2",
+    "@types/pino": "^6.3.2",
+    "@types/ws": "^7.2.6",
+    "jest": "^27.0.6",
+    "qrcode-terminal": "^0.12.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typedoc": "^0.20.0-beta.27",
+    "typescript": "^4.0.0"
+  },
+  "files": [
+    "lib/*",
+    "WAProto/*",
+    "WASignalGroup/*.js",
+    "WABinary/*.js"
+  ],
+  "homepage": "https://github.com/adiwajshing/Baileys",
+  "keywords": [
+    "whatsapp",
+    "js-whatsapp",
+    "whatsapp-api",
+    "whatsapp-web",
+    "whatsapp",
+    "whatsapp-chat",
+    "whatsapp-group",
+    "automation",
+    "multi-device"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "@adiwajshing/baileys-md",
+  "optionalDependencies": {
+    "qrcode-terminal": "^0.12.0"
+  },
+  "repository": {
+    "url": "git+ssh://git@github.com/adiwajshing/baileys.git"
+  },
+  "scripts": {
+    "browser-decode": "yarn ts-node src/BrowserMessageDecoding.ts",
+    "build:all": "tsc && typedoc",
+    "build:docs": "typedoc",
+    "build:tsc": "tsc",
+    "example": "node --inspect -r ts-node/register Example/example.ts",
+    "gen-protobuf": "bash src/BinaryNode/GenerateStatics.sh",
+    "lint": "eslint '*/*.ts' --quiet --fix",
+    "prepare": "tsc",
+    "test": "jest"
+  },
+  "types": "lib/index.d.ts",
+  "version": "4.0.0"
+}

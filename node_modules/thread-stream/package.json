@@ -1,0 +1,65 @@
+{
+  "_from": "thread-stream@^0.11.1",
+  "_id": "thread-stream@0.11.2",
+  "_inBundle": false,
+  "_integrity": "sha512-C/Yl5e5+UF3Rn2Fo8DzNb4jeM1/YnhIgfx9bFDNbFSnWZHPDJquZr6cM3DG33+8lcUrw7tmEv/ziZAc9urFSww==",
+  "_location": "/thread-stream",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "thread-stream@^0.11.1",
+    "name": "thread-stream",
+    "escapedName": "thread-stream",
+    "rawSpec": "^0.11.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.11.1"
+  },
+  "_requiredBy": [
+    "/pino"
+  ],
+  "_resolved": "https://registry.npmjs.org/thread-stream/-/thread-stream-0.11.2.tgz",
+  "_shasum": "ee9698505e14c84ccfb2359e17bda5f39551e4a5",
+  "_spec": "thread-stream@^0.11.1",
+  "_where": "C:\\test-bail-md\\node_modules\\pino",
+  "author": {
+    "name": "Matteo Collina",
+    "email": "hello@matteocollina.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mcollina/thread-stream/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A streaming way to send data to a Node.js Worker Thread",
+  "devDependencies": {
+    "desm": "^1.1.0",
+    "fastbench": "^1.0.1",
+    "husky": "^7.0.0",
+    "sonic-boom": "^2.0.1",
+    "standard": "^16.0.3",
+    "tap": "^15.0.0",
+    "why-is-node-running": "^2.2.0"
+  },
+  "homepage": "https://github.com/mcollina/thread-stream#readme",
+  "keywords": [
+    "worker",
+    "thread",
+    "threads",
+    "stream"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "thread-stream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcollina/thread-stream.git"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "standard && tap test/*.test.*js",
+    "test:ci": "standard && tap \"test/**/*.test.*js\" --no-check-coverage --coverage-report=lcovonly",
+    "test:yarn": "tap \"test/**/*.test.js\" --no-check-coverage"
+  },
+  "version": "0.11.2"
+}
